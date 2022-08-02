@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Wordle from "./components/Wordle";
+const queryStringValidation = require("./lib/queryStringValidation");
 
 function App() {
   const [word, setWord] = useState(null);
@@ -7,9 +8,11 @@ function App() {
 
   if (window.location.search) {
     const queryParams = new URLSearchParams(window.location.search);
-    test = (queryParams.get("test").length === 5) ? { id: 0, word: queryParams.get("test") } : false;
+    const queryStringTest = queryParams.get("test").toLowerCase()
+    test = (queryStringValidation.isQueryStringValid(queryStringTest)) ? { id: 0, word: queryStringTest } : false;
   }
 
+  //TODO: Pull word from API
   useEffect(() => {
 
     const wordList = {words: [

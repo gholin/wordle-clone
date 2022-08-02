@@ -80,41 +80,18 @@ If the tile is grey the letter is not in the wordle.
 
 ## Exercises
 
-### 1. Separate Data from Code
+### 1. Create a test plan outline
 
-This project contains two folders. Wordle_API (empty) and wordle-UI (NodeJS Project).
-The wordle-UI project contains a set of words within the code to be used for the word being guessed. This means that to add/remove/update the words being used a code file must be edited. This is considered bad practice. If we know data is going to be changed it should be located outside the code so it can be altered without touching code files. This exercise consists of multiple parts.
+To complete this exercise create a bullted list of test descriptions for tests you would run if you were testing this application.
 
-#### Exercise 1: Part 1
+### 2. Write a manual test
 
-Find the words in the code and create a file in wordle_API containing those words.
+Write a manaual test for loosing a game. Start at navigating to the page and end at the "Sorry, you loose!" dialog. Include any data you feel in required for a good test case.
 
-#### Exercise 1: Part 2
+### 3. Automate the test from step 2
 
-Using C# create an API in the wordle_API folder that returns a random word from the file created in step 1. Remember to create unit tests for your code where possible.
+Using a test automation framework of your choice create automate the manual test created in step 2.
 
-#### Exercise 1: Part 3
+### 4. Create an automation test for winning the game
 
-Refactor the API created in Part 2 to accept a query string. If the query string key is "test" and value is **true** then do not return a random word. Instead return a specific word that can be used for testing.
-
-#### Exercise 1: Part 4
-
-Refactor the wordle-UI project to contact the API created in Part 2 and use the word provided by the API as the solution to the puzzle.
-
----
-
-## Upload your solution to git
-
-Upload your code to your favorite git repository (github, gitlab, bitbucket, etc) and send a link to Rich and Mike.
-
-1. Create a new repo in your favorite git repository
-2. Open a command prompt
-3. Navigate to the Wordle-React directory
-4. Run the following commands with your repo
-
-``` sh
-  $ git remote set-url origin your-repo-url
-  $ git add .
-  $ git commit -am "your commit message"
-  $ git push
-```
+Using a query string you can specify the word that will be used in the game. The query string is test and if its value is a 5 letter string it should be set as the word for the game. For example if I wanted to specify the word for the game to be "drink" I would add **/?test=dress** (e.g. [http://localhost:3000/?test=dress](http://localhost:3000/?test=dress)) to the end of application URL.
