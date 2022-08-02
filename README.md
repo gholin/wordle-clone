@@ -39,7 +39,7 @@ If the installation was successful, you should be able to run the following comm
   8.8.0
 ```
 
-If you need to update `npm`, you can do so using `npm`! Cool right? After running the following command, after running relaunch your command line editor.
+If you need to update `npm`, you can do so using `npm`! Cool right? After running the following command, relaunch your command line editor.
 
 ```bash
   $ npm install npm -g
@@ -86,7 +86,7 @@ To complete this exercise create a bullted list of test descriptions for tests y
 
 ### 2. Write a manual test
 
-Write a manaual test for loosing a game. Start at navigating to the page and end at the "Sorry, you loose!" dialog. Include any data you feel is required for a good test case.
+Write a manaual test for losing a game. Start at navigating to the page and end at the "Sorry, you lose!" dialog. Include any data you feel is required for a good test case.
 
 ### 3. Automate the test from step 2
 
@@ -94,4 +94,4 @@ Using a test automation framework of your choice automate the manual test create
 
 ### 4. Create an automation test for winning the game
 
-Using a query string you can specify the word that will be used in the game. The query string is test and if its value is a 5 letter string it should be set as the word for the game. For example if I wanted to specify the word for the game to be "drink" I would add **/?test=dress** to the end of application URL (e.g. [http://localhost:3000/?test=dress](http://localhost:3000/?test=dress)).
+Using a query string you can specify the word that will be used in the game. The query string is test and if its value is a 5 letter string it should be set as the word for the game. For example if I wanted to specify the word for the game to be "dress" I would add **/?test=dress** to the end of application URL (e.g. [http://localhost:3000/?test=dress](http://localhost:3000/?test=dress)).
