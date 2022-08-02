@@ -3,6 +3,12 @@ import Wordle from "./components/Wordle";
 
 function App() {
   const [word, setWord] = useState(null);
+  let test = false;
+
+  if (window.location.search) {
+    const queryParams = new URLSearchParams(window.location.search);
+    test = (queryParams.get("test").length === 5) ? { id: 0, word: queryParams.get("test") } : false;
+  }
 
   useEffect(() => {
 
@@ -36,10 +42,10 @@ function App() {
         { id: 26, word: "quiet" },
         { id: 25, word: "xerus" }
       ]};
-      const randomWord = wordList.words[Math.floor(Math.random() * wordList.words.length)]
-      setWord(randomWord.word)
+      const randomWord = (test) ? test : wordList.words[Math.floor(Math.random() * wordList.words.length)];
+      setWord(randomWord.word);
       
-  }, [setWord]);
+  }, [setWord, test]);
 
   return (
     <div className="App">
