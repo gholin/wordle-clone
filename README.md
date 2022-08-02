@@ -86,11 +86,11 @@ To complete this exercise create a bullted list of test descriptions for tests y
 
 ### 2. Write a manual test
 
-Write a manaual test for loosing a game. Start at navigating to the page and end at the "Sorry, you loose!" dialog. Include any data you feel in required for a good test case.
+Write a manaual test for loosing a game. Start at navigating to the page and end at the "Sorry, you loose!" dialog. Include any data you feel is required for a good test case.
 
 ### 3. Automate the test from step 2
 
-Using a test automation framework of your choice create automate the manual test created in step 2.
+Using a test automation framework of your choice automate the manual test created in step 2.
 
 ### 4. Create an automation test for winning the game
 
