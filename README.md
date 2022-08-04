@@ -51,14 +51,14 @@ If you need to update `npm`, you can do so using `npm`! Cool right? After runnin
 
 ```bash
   $ git clone https://github.com/maximumsnow/wordle-clone
-  $ cd wordle-react/wordle-UI
+  $ cd wordle-react
   $ npm install
 ```
 
 ## Running the project
 
 ```bash
-  $ cd wordle-react/wordle-UI
+  $ cd wordle-react
   $ npm start
 ```
 
