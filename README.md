@@ -94,4 +94,4 @@ Using a test automation framework of your choice automate the manual test create
 
 ### 4. Create an automation test for winning the game
 
-Using a query string you can specify the word that will be used in the game. The query string is test and if its value is a 5 letter string it should be set as the word for the game. For example if I wanted to specify the word for the game to be "dress" I would add **/?test=dress** to the end of application URL (e.g. [http://localhost:3000/?test=dress](http://localhost:3000/?test=dress)).
+Using a query string you can specify the word that will be used in the game. The query string is test and if its value is a 5 letter string it should be set as the word for the game. For example if I wanted to specify the word for the game to be "drink" I would add **/?test=drink** to the end of application URL (e.g. [http://localhost:3000/?test=drink](http://localhost:3000/?test=drink)).

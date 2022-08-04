@@ -12,7 +12,7 @@ export default function Modal({ isCorrect, turn, solution }) {
       )}
       {!isCorrect && (
         <div>
-          <h1>Sorry, you lose!</h1>
+          <h1>Sorry, you loose!</h1>
           <p>The word was: <span className="solution">{solution}</span></p>
           <p>Better luck next time :)</p>
         </div>
