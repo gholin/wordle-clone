@@ -50,7 +50,7 @@ If you need to update `npm`, you can do so using `npm`! Cool right? After runnin
 ## Install
 
 ```bash
-  $ git clone https://gitlab.com/maximumsnow/wordle-react
+  $ git clone https://github.com/maximumsnow/wordle-clone
   $ cd wordle-react/wordle-UI
   $ npm install
 ```
