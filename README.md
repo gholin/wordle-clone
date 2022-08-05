@@ -7,7 +7,6 @@ A Wordle clone made with React.
 ## Requirements
 
 You will need a modern web browser, NodeJS, and NPM to run this project.
-To complete the exercises it is recommended that you have an IDE for C# and JavaScript.
 
 ### Node
 
@@ -29,7 +28,7 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
   
   You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
 
-If the installation was successful, you should be able to run the following command.
+If the installation was successful, you should be able to run the following command. Depending on when you install node your version may vary.
 
 ```bash
   $ node --version
@@ -39,7 +38,7 @@ If the installation was successful, you should be able to run the following comm
   8.8.0
 ```
 
-If you need to update `npm`, you can do so using `npm`! Cool right? After running the following command, relaunch your command line editor.
+If you need to update `npm`, you can do so using `npm` run the following command then relaunch your command line editor.
 
 ```bash
   $ npm install npm -g
