@@ -17,7 +17,6 @@ public class WordleTest : PageTest
         await Page.GotoAsync($"http://localhost:3000/?test={correctGuess}");
         await Expect(Page.GetByText("Wordle")).ToBeVisibleAsync();
         
-        // Enter in all guesses
         string[] guesses = ["lbcde", "zxuwb", "cccyd", "hkcpb", "ccccc", "bbbbb"];
         
         int index = 0;
@@ -50,7 +49,7 @@ public class WordleTest : PageTest
 
         // Enter in correct guess and verify the tiles fill correctly
         await Page.Keyboard.TypeAsync(correctGuess, new() { Delay = 100 });
-        // I could have nchose to chain the css in one locator (".row.current .filled"), but it seems more readable this way
+        // I could have chosen to chain the css in one locator (".row.current .filled"), but it seems more readable this way
         await Expect(Page.Locator(".row.current").Locator(".filled")).ToHaveCountAsync(5);
         
         // Hit enter and check that the rows inside
