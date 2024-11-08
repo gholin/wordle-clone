@@ -36,7 +36,7 @@ public class WordleTest : PageTest
         var loseModal = Page.Locator(".modal");
         // I split these because the modal test doesn't have good spacing and reads:
         //  "Sorry, you loose!The word was: ninjaBetter luck next time :)"
-        await Expect(loseModal.Locator("h1")).ToContainTextAsync("Sorry, you loose!"); // Totally a typo here, so this line fails currently.
+        await Expect(loseModal.Locator("h1")).ToContainTextAsync("Sorry, you lose!"); // Totally a typo here, so this line fails currently.
         await Expect(loseModal.GetByText($"The word was: {correctGuess}")).ToBeVisibleAsync();
         await Expect(loseModal.GetByText("Better luck next time :)")).ToBeVisibleAsync();
     }
