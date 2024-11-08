@@ -19,7 +19,7 @@ public class WordleTest : PageTest
         
         string[] guesses = ["lbcde", "zxuwb", "cccyd", "hkcpb", "ccccc", "bbbbb"];
         
-        int index = 0;
+        var index = 0;
         foreach (var guess in guesses) {
             // Type in guess
             await Page.Keyboard.TypeAsync(guess, new() { Delay = 100 });
